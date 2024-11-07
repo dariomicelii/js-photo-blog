@@ -4,6 +4,6 @@
 }
 
 .main {
+  min-height: 1071px;
   background-image: url("../img/cork.png");
-  min-height: auto;
 }
