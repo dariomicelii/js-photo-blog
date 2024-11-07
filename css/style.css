@@ -1,0 +1,8 @@
+.header {
+  background-image: url("../img/wall.png");
+  min-height: 200px;
+}
+
+.main {
+  background-image: url("../img/cork.png");
+}
