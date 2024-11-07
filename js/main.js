@@ -1,8 +1,24 @@
+const cardsRow = document.getElementById("cards-row");
+
 fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
   .then((response) => response.json())
   .then((data) => {
     console.log(data);
-    for (let dato in data) {
-      console.log(data[dato].url);
-    }
+    data.forEach((dato) => {
+      console.log(dato.url);
+      cardsRow.innerHTML += `
+      <div class="col-4">
+        <div class="card m-5" style="width: 18rem" id="card-element1">
+            <img src="${dato.url}"
+                class="card-img-top p-3"
+                alt="..."/>
+            <div class="card-body">
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+      </div>`;
+    });
   });
