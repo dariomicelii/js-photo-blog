@@ -7,3 +7,16 @@
   min-height: 1071px;
   background-image: url("../img/cork.png");
 }
+
+.page-title {
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+}
+
+.card-text {
+  font-family: "Annie Use Your Telescope", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
