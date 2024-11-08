@@ -38,5 +38,11 @@
 
 .card {
   cursor: pointer;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover {
+  rotate: 10deg;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  transition: 1.5s;
 }
