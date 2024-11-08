@@ -22,10 +22,10 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
             </div>
       </div>`;
     });
-    const cardEl = document.querySelectorAll("#cards-row.card");
+    const cardEl = document.querySelectorAll("#cards-row .card");
 
     cardEl.forEach((card) => {
-      cardEl.addEventListener("click", function () {
+      card.addEventListener("click", function () {
         layoverEl.classList.remove("d-none");
       });
     });
