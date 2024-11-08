@@ -21,6 +21,13 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
               </div>
             </div>
       </div>`;
+
+      layoverEl.innerHTML = `
+        <button class="btn btn-primary" id="button-chiusura">CHIUDI</button>
+        <img
+          src="${dato.url}"
+          alt=""
+        />`;
     });
     const cardEl = document.querySelectorAll("#cards-row .card");
 
@@ -28,5 +35,11 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
       card.addEventListener("click", function () {
         layoverEl.classList.remove("d-none");
       });
+    });
+
+    const buttonChiusura = document.getElementById("button-chiusura");
+
+    buttonChiusura.addEventListener("click", () => {
+      layoverEl.classList.add("d-none");
     });
   });
