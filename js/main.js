@@ -29,12 +29,13 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
           alt=""
           id="image"
         />`;
-    });
-    const cardEl = document.querySelectorAll("#cards-row .card");
 
-    cardEl.forEach((card) => {
-      card.addEventListener("click", function () {
-        layoverEl.classList.remove("d-none");
+      const cardEl = document.querySelectorAll("#cards-row .card");
+
+      cardEl.forEach((card) => {
+        card.addEventListener("click", function () {
+          layoverEl.classList.remove("d-none");
+        });
       });
     });
 
