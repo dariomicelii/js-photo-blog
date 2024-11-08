@@ -8,7 +8,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
     data.forEach((dato) => {
       console.log(dato.url);
       cardsRow.innerHTML += `
-      <div class="col-lg-4 col-md-6 col-sm-12">
+      <div class="col-lg-4 col-md-6 col-sm-12" id="colonna">
         <div class="card m-5" style="width: 18rem" id="card-element">
             <img src="${dato.url}"
                 class="card-img-top p-3"
