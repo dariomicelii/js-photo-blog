@@ -26,7 +26,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
 
     cardEl.forEach((card) => {
       cardEl.addEventListener("click", function () {
-        alert("Hai cliccato la card");
+        layoverEl.classList.remove("d-none");
       });
     });
   });
