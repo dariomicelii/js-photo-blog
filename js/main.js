@@ -22,20 +22,16 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
             </div>
       </div>`;
 
-      layoverEl.innerHTML = `
-        <button class="btn btn-primary" id="button-chiusura">CHIUDI</button>
-        <img
-          src="${dato.url}"
-          alt=""
-          id="image"
-        />`;
+      const layoverImg = document.querySelector("#layover img");
 
-      const cardEl = document.querySelectorAll("#cards-row .card");
+      layoverImg.src = dato.url;
+    });
 
-      cardEl.forEach((card) => {
-        card.addEventListener("click", function () {
-          layoverEl.classList.remove("d-none");
-        });
+    const cardEl = document.querySelectorAll("#cards-row .card");
+
+    cardEl.forEach((card) => {
+      card.addEventListener("click", function () {
+        layoverEl.classList.remove("d-none");
       });
     });
 
