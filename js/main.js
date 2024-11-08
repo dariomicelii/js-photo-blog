@@ -27,6 +27,7 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
         <img
           src="${dato.url}"
           alt=""
+          id="image"
         />`;
     });
     const cardEl = document.querySelectorAll("#cards-row .card");
