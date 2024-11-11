@@ -44,5 +44,6 @@
 .card:hover {
   rotate: 10deg;
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+  scale: 1.2;
   transition: 1.5s;
 }
