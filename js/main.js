@@ -21,16 +21,16 @@ fetch("https://jsonplaceholder.typicode.com/photos?_limit=6")
               </div>
             </div>
       </div>`;
-
-      const layoverImg = document.querySelector("#layover img");
-
-      layoverImg.src = dato.url;
     });
 
     const cardEl = document.querySelectorAll("#cards-row .card");
+    const layoverImg = document.querySelector("#layover img");
 
     cardEl.forEach((card) => {
       card.addEventListener("click", function () {
+        const current_img = this.getElementsByTagName("img")[0].src;
+        const layoverImg = document.querySelector("#layover img");
+        layoverImg.src = current_img;
         layoverEl.classList.remove("d-none");
       });
     });
